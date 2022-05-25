@@ -12,11 +12,11 @@ Programa para realizar as quatro operações matemáticas.
 #define SAIR 0
 
 double adicao () {
-	double som1, som2;
+	double par1, par2;
 	
-	printf ("Escreva os números que você quer somar com um espaço de distância:\n");
-	scanf("%lf %lf", &som1, &som2);
-	return som1 + som2;
+	printf ("Escreva as parcelas que você quer somar com um espaço de distância:\n");
+	scanf("%lf %lf", &par1, &par2);
+	return par1 + par2;
 }
 
 double subtracao () {
@@ -30,7 +30,11 @@ double subtracao () {
 }
 
 double multiplicacao () {
-	return 0;
+	double fat1, fat2;
+	
+	printf("Escreva os fatores que você quer multiplicar com um espaço de distância:\n");
+	scanf("%lf %lf", &fat1, &fat2);
+	return fat1 * fat2;
 }
 
 double divisao () {
