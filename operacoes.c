@@ -38,7 +38,13 @@ double multiplicacao () {
 }
 
 double divisao () {
-	return 0;
+	double dividendo, divisor;
+
+	printf("Digite o dividendo:\n");
+	scanf("%lf", &dividendo);
+	printf("Digite o divisor:\n");
+	scanf("%lf", &divisor);
+	return dividendo / divisor;
 }
 
 int main () {
