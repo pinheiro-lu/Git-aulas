@@ -65,5 +65,6 @@ int main () {
 			printf("Código inválido!\n");
 			break;
 		} 
+		printf ("O resultado do cálculo é %.2f.\n", resultado);
 	} while (operacao != 0);
 }
