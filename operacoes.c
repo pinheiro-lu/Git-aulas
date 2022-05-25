@@ -14,13 +14,19 @@ Programa para realizar as quatro operações matemáticas.
 double adicao () {
 	double som1, som2;
 	
-	printf ("Escreva os números que você quer somar com um espaço de distância\n");
+	printf ("Escreva os números que você quer somar com um espaço de distância:\n");
 	scanf("%lf %lf", &som1, &som2);
 	return som1 + som2;
 }
 
 double subtracao () {
-	return 0;
+	double minuendo, subtraendo;
+
+	printf ("Digite o minuendo:\n");
+	scanf("%lf", &minuendo);
+	printf("Digite o subtraendo:\n");
+	scanf("%lf", &subtraendo);
+	return minuendo - subtraendo;
 }
 
 double multiplicacao () {
@@ -32,7 +38,7 @@ double divisao () {
 }
 
 int main () {
-	int operacao;
+	int operacao, valResult = 0;
 	double resultado;
 
 	do {
@@ -47,18 +53,22 @@ int main () {
 		
 		switch (operacao) {
 			case ADICAO:
+			valResult = 1;
 			resultado = adicao();
 			break;
 
 			case SUBTRACAO:
+			valResult = 1;
 			resultado = subtracao();
 			break;
 
 			case MULTIPLICACAO:
+			valResult = 1;
 			resultado = multiplicacao();
 			break;
 
 			case DIVISAO:
+			valResult = 1;
 			resultado = divisao();
 			break;
 
@@ -69,6 +79,9 @@ int main () {
 			printf("Código inválido!\n");
 			break;
 		} 
-		printf ("O resultado do cálculo é %.2f.\n", resultado);
+		if (valResult) {
+			printf ("O resultado do cálculo é %.2f.\n", resultado);
+			valResult = 0;
+		}
 	} while (operacao != 0);
 }
