@@ -12,7 +12,11 @@ Programa para realizar as quatro operações matemáticas.
 #define SAIR 0
 
 double adicao () {
-	return 0;
+	double som1, som2;
+	
+	printf ("Escreva os números que você quer somar com um espaço de distância\n");
+	scanf("%lf %lf", &som1, &som2);
+	return som1 + som2;
 }
 
 double subtracao () {
