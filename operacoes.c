@@ -32,7 +32,7 @@ double subtracao () {
 double multiplicacao () {
 	double fat1, fat2;
 	
-	printf("Escreva os fatores que você quer multiplicar com um espaço de distância:\n");
+	printf("Escreva os números que você quer multiplicar com um espaço de distância:\n");
 	scanf("%lf %lf", &fat1, &fat2);
 	return fat1 * fat2;
 }
