@@ -14,7 +14,7 @@ Programa para realizar as quatro operações matemáticas.
 double adicao () {
 	double par1, par2;
 	
-	printf ("Escreva as parcelas que você quer somar com um espaço de distância:\n");
+	printf ("Digite as parcelas que você deseja somar com um espaço de distância:\n");
 	scanf("%lf %lf", &par1, &par2);
 	return par1 + par2;
 }
