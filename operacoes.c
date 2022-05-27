@@ -22,7 +22,7 @@ double adicao () {
 double subtracao () {
 	double minuendo, subtraendo;
 
-	printf ("Digite o minuendo:\n");
+	printf ("Digite o número de qual você quer fazer a multipicação:\n");
 	scanf("%lf", &minuendo);
 	printf("Digite o subtraendo:\n");
 	scanf("%lf", &subtraendo);
